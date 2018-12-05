@@ -1,0 +1,82 @@
+.start,
+.new-game {
+  width: 200px;
+  height: 60px;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+  background-color: rgb(255, 211, 40);
+  margin: 50px auto 5px;
+  border-radius: 2px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.start ~ p {
+  line-height: 0;
+}
+
+.registration-container {
+  width: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+.registration {
+ /* transform: translateX(-100%);*/
+}
+
+.registration-move{
+  animation: move .5s ease-in-out .3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move{
+  0%{ transform: translateX(-100%); }
+  80%{ transform: translateX(10%); }
+  100%{ transform: translateX(0); }
+}
+
+.registration-container form {
+  margin: 40px auto 0;
+  color: #ffffff;
+}
+
+.registration-container form > label {
+  width: 400px;
+  margin: 0 auto;
+  text-align: right;
+  display: block;
+}
+
+.registration-container form input {
+  background-color: inherit;
+  margin: 10px;
+  font-size: 21px;
+  border: none;
+  border-bottom: 2px solid rgb(112, 220, 220);
+  outline: none;
+  color: rgb(112, 220, 220);
+}
+
+.start, .new-game {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  background-image: linear-gradient(to top, rgb(255, 211, 40) 0%, rgb(255, 211, 40) 50%, rgb(112, 220, 220) 51%, rgb(112, 220, 220) 100%);
+  background-size: auto 200%;
+  background-position: 0 100%;
+  transition: background-position .5s cubic-bezier(.075, .82, .165, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.start:hover, .new-game:hover {
+  background-position: 0 0;
+}
+
+h3.choose {
+  color: #ffffff;
+  margin: 30px 0 0;
+}

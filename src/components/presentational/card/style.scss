@@ -1,0 +1,75 @@
+.card-field {
+  margin: 0 auto;
+}
+
+.card-container, 
+.front-card, 
+.back-card {
+  width: 140px;
+  height: 200px;
+  cursor: pointer; 
+}
+
+.card-container {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.card {
+  transform-style: preserve-3d;
+  position: relative;
+  transition: all .4s linear;
+}
+
+.front-card, 
+.back-card {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border: 5px solid grey;
+  border-radius: 5px;
+  box-shadow: 8px 10px 15px rgba(0, 0, 0, .8);
+}
+
+.back-card {
+  z-index: 1;
+}
+
+.front-card {
+  transform: rotateY(180deg);
+  margin-left: -10px;
+}
+
+.flip-card .card {
+  transform: rotateY(180deg);
+}
+
+.transform-card {
+  animation: rotate .4s ease-in-out .3s;
+  animation-fill-mode: forwards;
+  -webkit-animation: rotate .4s ease-in-out .3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0%{transform: rotate(-20deg); opacity : 1; visibility: visible; }
+  25%{transform: rotate(20deg);}
+  50%{transform: rotate(-20deg);}
+  75%{transform: rotate(20deg);}
+  100%{transform: rotate(0); opacity : 0; visibility: hidden;}
+}
+
+.choose-cards input, 
+.hidden {
+  display: none;
+}

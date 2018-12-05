@@ -1,0 +1,27 @@
+table {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+    font-weight: 400;
+}
+
+table caption {
+  padding: 10px;
+  color: rgb(255, 211, 40);
+  font-size: 36px;
+}
+
+table thead td  {
+  padding: 30px;
+  color: rgb(112, 220, 220);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+table td  {
+  padding: 5px 10px;
+}

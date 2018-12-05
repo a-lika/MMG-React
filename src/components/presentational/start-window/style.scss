@@ -1,0 +1,81 @@
+.start-game {
+  width: 900px;
+  background: rgba(0, 0, 0, .7);
+  margin: 20px auto;
+  padding: 70px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.start-game ul {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.start-game li {
+  list-style-image: url('images/arrow_small.png');
+}
+
+.continue {
+  width: 200px;
+  height: 60px;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+  background-color: rgb(255, 211, 40);
+  margin: 50px auto 5px;
+  border-radius: 2px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.continue { 
+  background-image: url('images/arrow_big.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-position .3s ease-in;
+}
+
+.continue:hover {
+  background-position: 55%;
+}
+
+.continue ~ p {
+  line-height: 0;
+}
+
+.rules {
+  width: 900px;
+}
+
+.rules h1 {
+  line-height: 20px;
+}
+
+.rules h5 {
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 5px;
+}
+
+.about-game {
+  padding: 7px;
+}
+
+.about-game p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 10px;
+  padding: 0;
+}
+
+.rules-move {
+  transform: translateX(100%);
+  transition: transform .5s ease-in-out;
+}
+
+.how-to-play h3 {
+  line-height: 10px;
+}

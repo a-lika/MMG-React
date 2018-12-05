@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Cartoonist Hand";
+  src: url("../fonts/cartoonist.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  font: 26px "Cartoonist Hand", sans-serif;
+  background-image: url('../images/bubbles.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body:nth-child(2) {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: rgb(255, 211, 40);
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: rgb(255, 211, 40);
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(112, 220, 220);
+}
+
+.start-game, 
+.registration-container,
+.game-container {
+  width: 900px;
+  background-color: rgba(0, 0, 0, .7);
+  margin: 20px auto;
+  padding: 50px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.game-container {
+  width: 90%;
+  min-width: 1400px;
+  min-height: 900px;
+  padding: 30px 5px;
+}
+
+.game-field {
+  padding: 30px 0;
+  position: relative;
+    min-width: 90%;
+}
+
+.card-field {
+  margin: 0 auto;
+}
+
+.menu-info  {
+  width: 91%;
+  min-height: 650px;
+  position: absolute;
+  left: 5%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, .85);
+  z-index: 3;
+  border: 5px dotted rgb(112, 220, 220);
+  box-shadow: 5px 5px 25px 15px rgba(112, 220, 220, .3);
+}

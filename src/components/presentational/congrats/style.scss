@@ -1,0 +1,14 @@
+.infoCongrats {
+  background-color: transparent;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCongrats h2 {
+  font-size: 140px;
+}
+
+.infoCongrats .close {
+  display: none;
+}
