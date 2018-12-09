@@ -68,6 +68,11 @@ class CardFieldContainer extends Component {
     removeFlipCard = (n) => {
         n.classList.remove('flip-card');
     }
+    
+    shouldComponentUpdate = (nextProps) => {
+        const restart = this.props.restart;
+        return restart !== nextProps.restart;
+    }
 
     componentWillUpdate = () => {
         const cardsField = document.getElementById("card-field");
@@ -127,3 +132,4 @@ export default connect(
 )(CardFieldContainer);
 
 export { CardFieldContainer };
+
